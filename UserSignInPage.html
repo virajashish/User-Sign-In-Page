@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>User Sign In</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="UserSignInPage.css">
+		<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+		<script src="UserSignInPage.js"></script>
+	</head>
+	<body>
+        <div class="dropdown">          
+            <a class="active">User Sign-In-Page</a>
+            <a>Feedback</a> 
+            <a>Home</a>
+        </div>
+        <br><br><br>
+	    <div style="display: block; text-align: center; font-size: 18px; font-family: serif; border: 2px aliceblue; width: 40%; border-radius: 5px; background-color: floralwhite; margin-left: auto; margin-right: auto; padding: 25px 0px 17px;">
+	    	<div style="text-align: left; margin-left: 100px;">
+	            E-mail ID : &#160;<span class="error">*</span>
+	            <input type="email" id="email" placeholder="Email id..." required><br><br>
+
+	            Password :<span class="error">*</span>
+    			<input type="password" id="password" placeholder="Password..." required><br><br>
+	            &#160;&#160;
+
+	            <button class="button" onclick="signUp()" id="signUp">SignUp</button>
+    			<button class="button" onclick="signIn()" id="signIn">SignIn</button>
+			    <button class="button" onclick="signOut()" id="signOut">SignOut</button>
+	            <p class="error" style="font-size: 15px;"><span class="error">*required field</span></p>
+			</div>
+	    </div>
+	</body>
+</html>
